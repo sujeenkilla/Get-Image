@@ -1,0 +1,69 @@
+<h1>this is TODO list</h1>
+
+<ul>
+    <li *ngFor="let todo of todos">
+        <strong>{{todo.id}}</strong> {{todo.title}}
+    </li>
+</ul>
+
+
+<br>
+<br>
+<br>
+<h1>this is EMPS data</h1>
+
+<table>
+    <thead>
+        <td>Id</td>
+        <td>Name</td>
+        <td>Email</td>
+    </thead>
+    <tbody>
+        <tr *ngFor="let emp of emps">
+            <td>{{emp.id}}</td>
+            <td>{{emp.name}}</td>
+            <td>{{emp.email}}</td>
+        </tr>
+    </tbody>
+</table>
+
+<!--
+<br>
+<br>
+<br>
+<h1>This is Photo details</h1>
+<table>
+    <thead>
+        <td>Photo_Id</td>
+        <td>Photo_title</td>
+        <td>Photo_url</td>
+    </thead>
+    <tbody>
+        <tr *ngFor="let photo of photos">
+            <td>{{photo.id}}</td>
+            <td>{{photo.title}}</td>
+            <td>{{photo.url}}</td>
+        </tr>
+    </tbody>
+</table>
+-->
+
+
+<br>
+<br>
+<br>
+<h1>This is Product details</h1>
+<table>
+    <thead>
+        <td>Product_Id</td>
+        <td>Product_title</td>
+        <td>Product_Discription</td>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of products">
+            <td>{{product.id}}</td>
+            <td>{{product.title}}</td>
+            <td>{{product.discription}}</td>
+        </tr>
+    </tbody>
+</table>

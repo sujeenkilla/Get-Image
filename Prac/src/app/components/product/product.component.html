@@ -1,0 +1,8 @@
+<h1>Search Products</h1>
+<input [formControl]="input_f" placeholder="Search for products" />
+
+<ul>
+  <li *ngFor="let item of (search_query | async)">
+    <img [src]="item.url" [alt]="item.title" class="image" />
+  </li>
+</ul>

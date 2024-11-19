@@ -1,0 +1,14 @@
+<div class="login">
+    <form [formGroup]="login">
+        <div class="username">
+            Username:
+             <input formControlName="uname" placeholder="Username">
+             <small *ngIf="login.controls['uname'].dirty && login.hasError('required','uname')" class="text-danger">*Username is required</small>
+        </div>
+        <div class="password">
+            Password: <input formControlName="pass" type="password" placeholder="Password">
+            <small *ngIf="login.controls['pass'].dirty && login.hasError('required','pass')" class="text-danger">*Password is required</small>
+        </div>
+        <button  (click)="clicked()" [disabled]="login.invalid" class="btn btn-primamry " style="background-color: black; color: aliceblue;">Login</button>
+    </form>
+</div>
